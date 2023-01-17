@@ -1,0 +1,42 @@
+.comment {
+    display: flex;
+    justify-content: space-between;
+
+    &:last-of-type>.info {
+
+        margin-bottom: 15px;
+
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.userImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e6e6e6;
+}
+
+.info {
+    width: calc(100% - 60px);
+
+    &::after {
+        content: "";
+        display: block;
+        margin: 15px 0;
+        width: 100%;
+        height: 2px;
+        background-color: #e6e6e6;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    p {
+        color: #808080;
+        padding-right: 10px;
+    }
+}

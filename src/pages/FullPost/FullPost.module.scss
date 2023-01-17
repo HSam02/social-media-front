@@ -1,0 +1,18 @@
+.fullPost {
+    margin-top: 65px;
+    padding: 20px;
+
+    >div:first-child>div:first-child {
+        height: auto;
+        max-height: unset;
+    }
+}
+
+.text {
+    margin: 15px 0;
+
+    pre {
+        white-space: pre-wrap;
+        font-size: 20px;
+    }
+}

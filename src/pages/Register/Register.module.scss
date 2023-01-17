@@ -1,0 +1,62 @@
+.register {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    max-width: 500px;
+    width: 80%;
+    padding: 40px 0 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // border-radius: 5px;
+
+    background-color: #fff;
+
+    &>h2 {
+        font-size: 40px;
+    }
+
+    &>input {
+        height: 30px;
+        width: 80%;
+        margin: 10px 0;
+        padding: 15px 10px;
+        border-radius: 5px;
+        border: 1px solid #000;
+        outline: none;
+        transition: .2s;
+
+        // &:focus {
+            // outline: none;
+            // border-color: #2eaf2e;
+        // }
+    }
+}
+
+.buttons {
+    &>* {
+        margin: 10px 5px;
+    }
+
+    >input[type=submit] {
+        display: none;
+    }
+}
+
+.imgBtns {
+    width: 80%;
+
+    &>* {
+        margin: 10px 5px;
+    }
+
+    >input[type=file] {
+        display: none;
+    }
+}
