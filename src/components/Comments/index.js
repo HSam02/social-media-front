@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useForm } from "react-hook-form";
 import { useSelector } from "react-redux";
 import { AppButton, Avatar, Comment } from "../";
 import appAxios from "../../appAxios";
@@ -64,7 +63,7 @@ export const Comments = ({ enableAddCom, postId, fullPost }) => {
                 fullPost={fullPost}
               />
             ))}
-          {enableAddCom && (
+          {enableAddCom && user && (
             <li className={scss.newComment}>
               {user.avatarUrl ? (
                 <Avatar avatarUrl={user.avatarUrl} />
